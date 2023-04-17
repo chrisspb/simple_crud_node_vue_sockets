@@ -170,3 +170,19 @@ io.on('connection', (socket) => {
         console.log(`Socket disconnected: ${socket.id}`);
     });
 });
+
+/*
+http://localhost/phpmyadmin
+
+1)
+create table messages_db
+
+2)
+CREATE TABLE `messages` (
+ `texte` text NOT NULL,
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `created_at` date NOT NULL,
+ `updated_at` date NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1
+*/
